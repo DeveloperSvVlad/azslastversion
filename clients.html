@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>Наши партнёры</title>
+</head>
+<body>
+  <div class="wrapper">
+  <!-- ?Подключение Header -->
+  <header class="header js-head js-scroll">
+    <div class="header__container container">
+        <div class="header__start">
+            <div class="header__logo">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" width="60" height="30" alt="ИЗС">
+                </a>
+            </div>
+            <nav class="header__menu menu">
+                <div class="header__menu-wrapper menu">
+                    <div class="menu__mobile-close js-menu-close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L10.8995 10.8995" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M1 11L10.8995 1.10051" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#production">Продукция</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#services">Серверсное обслуживание</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="company.html#sertificat">Сертификаты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="clients.html">Наши клиенты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="company.html">О компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="all-news.html">Новости</a></li>
+                    </ul>
+                    <div class="menu__mobile-content">
+                        <a class="menu__mobile-link" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                        <a class="menu__mobile-btn btn btn-second" href="#" >Написать в Whatsapp </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__end">
+            <div class="header__any any-content">
+                <div class="any-content__link">
+                    <a class="link-main" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                </div>
+                <div class="any-content__block">
+                    <div class="any-content__item">
+                        <a href="mailto:azs@mail.ru" class="any-content__icon icon-header"><span class="i-message"></span></a>
+                    </div>
+                    <div class="any-content__item">
+                        <button class="search js-search-btn icon-header"><span class="i-search"></span></button>
+                    </div>
+                </div>
+                <button class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="search-block js-search-block">
+        <div class="container">
+            <form class="search-block__form" action="#">
+                <div class="search-block__input">
+                    <input placeholder="Введите название" class="search-block__control"></input>
+                    <button class="search-block__btn"><span class="i-search"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+
+
+<!--? Location popup -->
+<div class="popup popup-main js-popup-main">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"><span class="i-close"></span></button>
+            <div class="popup__title">Обратная связь</div>
+            <div class="popup__desc">
+                Вы можете задать свой вопрос в форме ниже. Наши специалисты свяжутся с вами 
+                и проконсультируют по всем вопросам
+            </div>
+            <form class="form" action="#">
+                <div class="form__wrapper">
+                    <div class="form__item">
+                        <label for="input-name" class="form__label">Имя</label>
+                        <div class="form__input">
+                            <input id="input-name" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="input-questions" class="form__label">Ваш вопрос</label>
+                        <div class="form__input">
+                            <input id="input-questions" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input">
+                            <input required class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                    </div>
+                </div>
+                <button class="form__btn btn btn-primary">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+  <script>
+      const headerSecond = document.querySelector('.header');
+      headerSecond.classList.add('header-second')
+  </script>
+  <!-- ?Основной контент -->
+  <main class="main main--page">
+    <!--? Breadcrumb -->
+    <div class="breadcrumb mb-desc">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb__nav">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb__item active">Наши партнёры</li>
+               </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ? Partners -->
+    <section class="partners block-ind">
+        <div class="container">
+            <div class="head">
+                <h1 class="title title-primary">Работаем везде</h1>
+            </div>
+            <div class="partners__wrapper">
+                <div class="grid-main">
+                    <div class="item-partners radius-any">
+                        <div class="item-partners__image">
+                          <img src="img/partners/partners-1.png" alt="">
+                        </div>
+                        <div class="item-partners__text">OOO "ГазпромНефть"</div>
+                    </div>
+                    <div class="item-partners radius-any">
+                        <div class="item-partners__image">
+                          <img src="img/partners/partners-2.png" alt="">
+                        </div>
+                        <div class="item-partners__text">OOO "Лукойл"</div>
+                    </div>
+                    <div class="item-partners radius-any">
+                        <div class="item-partners__image">
+                          <img src="img/partners/partners-3.png" alt="">
+                        </div>
+                        <div class="item-partners__text">OOO "Сеть АЗС UG BP"</div>
+                    </div>
+                    <div class="item-partners radius-any">
+                        <div class="item-partners__image">
+                          <img src="img/partners/partners-4.png" alt="">
+                        </div>
+                        <div class="item-partners__text">OOO "Девон"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+  </main>
+
+  <!-- ?Подключение Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__item">
+                ООО "ИЗС" 2022
+            </div>
+            <div class="footer__social social">
+                <a href="#" class="social__item">
+                    <span class="i-telegram"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-whatsap"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-vk"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</div>
+<script src="libs/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/fslightbox.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [55.75450412756219, 37.61779656324545], 
+            zoom: 10, 
+            controls: [],
+          },);
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/logo.svg',
+              iconImageSize: [60, 30],
+          });
+           let mainLocation = [
+             {
+              coords: [55.75450412756219, 37.61779656324545],
+              hintContent: 'Азс',
+              ballonContentText: 'Азс'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+          myMap.behaviors.disable('scrollZoom');
+
+  var ctrlKey = false;
+  var ctrlMessVisible = false;
+  var timer;
+
+  // Отслеживаем скролл мыши на карте, чтобы показывать уведомление
+  myMap.events.add(['wheel', 'mousedown'], function(e) {
+    if (e.get('type') == 'wheel') {
+      if (!ctrlKey) { // Ctrl не нажат, показываем уведомление
+        $('#ymap_ctrl_display').fadeIn(300);
+        ctrlMessVisible = true;
+        clearTimeout(timer); // Очищаем таймер, чтобы продолжать показывать уведомление
+        timer = setTimeout(function() {
+          $('#ymap_ctrl_display').fadeOut(300);
+          ctrlMessVisible = false;
+        }, 1500);
+      }
+      else { // Ctrl нажат, скрываем сообщение
+        $('#ymap_ctrl_display').fadeOut(100);
+      }
+    }
+    if (e.get('type') == 'mousedown' && ctrlMessVisible) { // Скрываем уведомление при клике на карте
+      $('#ymap_ctrl_display').fadeOut(100);
+    }
+  });
+
+    // Обрабатываем нажатие на Ctrl
+    $(document).keydown(function(e) {
+      if (e.which === 17 && !ctrlKey) { // Ctrl нажат: включаем масштабирование мышью
+        ctrlKey = true;
+        myMap.behaviors.enable('scrollZoom');
+      }
+  });
+    $(document).keyup(function(e) { // Ctrl не нажат: выключаем масштабирование мышью
+      if (e.which === 17) {
+        ctrlKey = false;
+        myMap.behaviors.disable('scrollZoom');
+      }
+    });
+      }
+</script> 
+
+</body>
+</html>

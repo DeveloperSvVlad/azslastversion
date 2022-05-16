@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>О компании</title>
+</head>
+<body>
+  <div class="wrapper">
+  <!-- ?Подключение Header -->
+  <header class="header js-head js-scroll">
+    <div class="header__container container">
+        <div class="header__start">
+            <div class="header__logo">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" width="60" height="30" alt="ИЗС">
+                </a>
+            </div>
+            <nav class="header__menu menu">
+                <div class="header__menu-wrapper menu">
+                    <div class="menu__mobile-close js-menu-close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L10.8995 10.8995" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M1 11L10.8995 1.10051" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#production">Продукция</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#services">Серверсное обслуживание</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="company.html#sertificat">Сертификаты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="partners.html">Наши партнёры</a></li>
+                        <li class="menu__item"><a class="menu__link" href="company.html">О компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="all-news.html">Новости</a></li>
+                    </ul>
+                    <div class="menu__mobile-content">
+                        <a class="menu__mobile-link" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                        <a class="menu__mobile-btn btn btn-second" href="#" >Написать в Whatsapp </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__end">
+            <div class="header__any any-content">
+                <div class="any-content__link">
+                    <a class="link-main" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                </div>
+                <div class="any-content__block">
+                    <div class="any-content__item">
+                        <a href="mailto:azs@mail.ru" class="any-content__icon icon-header"><span class="i-message"></span></a>
+                    </div>
+                    <div class="any-content__item">
+                        <button class="search js-search-btn icon-header"><span class="i-search"></span></button>
+                    </div>
+                </div>
+                <button class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="search-block js-search-block">
+        <div class="container">
+            <form class="search-block__form" action="#">
+                <div class="search-block__input">
+                    <input placeholder="Введите название" class="search-block__control"></input>
+                    <button class="search-block__btn"><span class="i-search"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+
+
+<!--? Location popup -->
+<div class="popup popup-main js-popup-main">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"><span class="i-close"></span></button>
+            <div class="popup__title">Обратная связь</div>
+            <div class="popup__desc">
+                Вы можете задать свой вопрос в форме ниже. Наши специалисты свяжутся с вами 
+                и проконсультируют по всем вопросам
+            </div>
+            <form class="form" action="#">
+                <div class="form__wrapper">
+                    <div class="form__item">
+                        <label for="input-name" class="form__label">Имя</label>
+                        <div class="form__input">
+                            <input id="input-name" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="input-questions" class="form__label">Ваш вопрос</label>
+                        <div class="form__input">
+                            <input id="input-questions" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input">
+                            <input required class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                    </div>
+                </div>
+                <button class="form__btn btn btn-primary">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+  <script>
+      const headerSecond = document.querySelector('.header');
+      headerSecond.classList.add('header-second')
+  </script>
+  <!-- ?Основной контент -->
+  <main class="main main--page">
+    <!--? Breadcrumb -->
+    <div class="breadcrumb mb-desc">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb__nav">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb__item active">О компании</li>
+               </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--? Company -->
+    <section class="company block-ind">
+        <div class="container">
+            <div class="head">
+                <h1 class="title title-primary">О компании ООО "АЗС"</h1>
+            </div>
+            <div class="company__image image-block">
+                <img src="img/company/company-image.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ? Partners work -->
+    <section class="partners-work block-ind">
+        <div class="container">
+            <div class="head">
+                <h2 class="title title-second">Закрываем задачи партнёров:</h2>
+            </div>
+            <div class="partners-work__row">
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-work__item">
+                    <div class="item-work">
+                        <div class="item-work__image">
+                            <img src="img/partners/partners-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? Maps block -->
+    <section class="maps-block block-ind">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Работаем везде</div>
+                    </div>
+                    <div class="page__content">
+                        <div class="head">
+                            <h2 class="maps-block__title title title-second">Разрабатываем и доставляем КАЗС, АГЗС, АГНКС и резервуары по всей России</h2>
+                        </div>
+                        <div class="maps-block__image">
+                            <img src="img/map.svg" alt="">
+                            <div class="animate">
+                                <div class="animate__item animate__item--1">
+                                    <div class="animate__block"></div>
+                                </div>
+                                <div class="animate__item animate__item--2">
+                                    <div class="animate__block"></div>
+                                </div>
+                                <div class="animate__item animate__item--3">
+                                    <div class="animate__block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? Consultation -->
+    <section class="consultation block-ind">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Консультация</div>
+                    </div>
+                    <div class="page__content">
+                        <div class="head">
+                            <h2 class="consultation__title title title-second">Получить консультацию по подбору КАЗС</h2>
+                        </div>
+                        <div class="consultation__row">
+                            <div class="consultation__form">
+                                <form class="form" action="#">
+                                    <div class="form__wrapper">
+                                        <div class="form__item">
+                                            <label for="input-name" class="form__label">Имя</label>
+                                            <div class="form__input">
+                                                <input id="input-name" required class="form__control form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <label for="input-questions" class="form__label">Ваш вопрос</label>
+                                            <div class="form__input">
+                                                <input id="input-questions" required class="form__control form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form__item">
+                                            <div class="form__input">
+                                                <input required class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="form__btn btn btn-primary">Отправить заявку</button>
+                                </form>
+                            </div>
+                            <div class="consultation__image image-style">
+                                <img src="img/consulation-image.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--? Sertificat  -->
+     <section id="sertificat" class="sertificat block-ind">
+         <div class="container">
+             <div class="page">
+                 <div class="page__row">
+                     <div class="page__text">
+                         <div class="text text--ind">Гарантия</div>
+                     </div>
+                        <div class="page__content">
+                            <div class="head">
+                                <h2 class="sertificat__title title-second">Вся продукция сертифицирована и имеет соответствующие разрешения</h2>
+                            </div>
+                            <div class="sertificat__wrapper">
+                                <div class="sertificat__items">
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-1.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-2.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-3.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-4.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-5.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-6.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-7.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-8.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-8.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sertificat__item">
+                                        <a data-fslightbox="gallery" href="img/sertificat/sertificat-9.jpg" class="sertificat__body">
+                                            <img src="img/sertificat/sertificat-9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+        </div>
+     </section>
+
+     <!-- ? Block-any -->
+     <section class="block-any block-ind">
+         <div class="container">
+             <div class="page">
+                 <div class="page__row">
+                     <div class="page__text">
+                         <div class="text text--ind">Сервисное <br> обсулуживание</div>
+                     </div>
+                     <div class="page__content">
+                        <div class="head block-any__head block-any__head--width">
+                            <h2 class="title title-second">Обеспечим пуско-наладочные работы и ввод в эксплуатацию</h2>
+                        </div>
+                        <div class="block-any__content">
+                            <div class="block-any__image image-style mb-desc">
+                                <img src="img/block-image.png" alt="">
+                            </div>
+                            <div class="block-any__list list">
+                                <div class="list__title">Компания ООО "АЗС" осуществляет сервисное обслуживание:</div>
+                                <ul class="list__content mb-desc">
+                                    <li>Пусконаладочные работы на АЗС</li>
+                                    <li>Подключение безоператорных АЗС</li>
+                                    <li>Сервисное обслуживание оборудования</li>
+                                    <li>Ремонт оборудования АЗС</li>
+                                    <li>Ремонт электронных схем</li>
+                                </ul>
+                              <p>Все работы выполняются опытными специалистами. После сдачи работ сопровождаем дистанционно, работает круглосуточная техническая поддержка .</p>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+     <!-- ? Any slider -->
+     <section class="any-slider block-ind">
+         <div class="container">
+             <div class="page">
+                 <div class="page__row">
+                     <div class="page__text">
+                         <div class="text text--ind">Фотогалерея</div>
+                     </div>
+                     <div class="page__content">
+                         <div class="head">
+                             <h2 class="title title-second">Выполненные проекты</h2>
+                         </div>
+                         <div class="any-slider__content">
+                             <div class="swiper-container js-any-slider">
+                                 <div class="swiper-wrapper">
+                                     <div class="swiper-slide">
+                                         <div class="any-slider__item image-style">
+                                             <img src="img/block-image.png" alt="">
+                                         </div>
+                                     </div>
+                                     <div class="swiper-slide">
+                                        <div class="any-slider__item image-style">
+                                            <img src="img/block-image.png" alt="">
+                                        </div>
+                                    </div>
+                                 </div>
+                                 <div class="any-slider__controls">
+                                    <div class="controls">
+                                        <div class="swiper-button-prev arrow-slide js-prev-any">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.51038 1L0.999998 9.51038M9.51038 18.0208L0.999998 9.51038M0.999998 9.51038H18.0208"/>
+                                            </svg>    
+                                        </div>
+                                        <div class="swiper-button-next arrow-slider js-next-any">
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.51025 18.021L17.0206 9.51062M8.51025 1.00024L17.0206 9.51062M17.0206 9.51062L-0.000124718 9.51062"/>
+                                            </svg>    
+                                        </div>
+                                      </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+    <!--? Contacts -->
+    <section class="contacts block-ind">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Контакты</div>
+                    </div>
+                    <div class="page__content">
+                        <div class="head">
+                            <h3 class="title title-second">Свяжитесь с нами удобным для вас способом</h3>
+                        </div>
+                        <div class="contacts__wrapper">
+                            <div class="contacts__items">
+                                <div class="contacts__item">
+                                    <div class="item-contacts">
+                                        <div class="item-contacts__label">Офис в Москве</div>
+                                        <div class="item-contacts__any">142111, г. Москва, поселок Знамя Октября, поселение Рязановское, Рязановское шоссе вл.21</div>
+                                    </div>
+                                    <div class="item-contacts">
+                                        <div class="item-contacts__label">Производство</div>
+                                        <div class="item-contacts__any"> Челябинская обл., г. Копейск,   ул. Поселок советов 20А</div>
+                                    </div>
+                                </div>
+                                <div class="contacts__item">
+                                    <div class="item-contacts">
+                                        <div class="item-contacts__label">Горячая линия</div>
+                                            <a href="tel:+79080610174" class="item-contacts__any">+7 (908) 061-01-74</a>
+                                    </div>
+                                    <div class="item-contacts">
+                                        <div class="item-contacts__label">Обратная связь</div>
+                                            <div class="item-contacts__buttons">
+                                            <a href="mailto:igs74.ru@yandex.ru"class="item-contacts__btn btn btn-primary">Написать на почту</a>
+                                            <button class="item-contacts__btn btn btn-primary">Написать в Whatsapp </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--? Maps  -->
+    <div id="map" class="map">
+        <div class="map__scroll" id="ymap_ctrl_display" style="display: none;">
+        <div class="map__text">
+            Чтобы изменить масштаб, прокручивайте карту, удерживая клавишу Ctrl.
+        </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- ?Подключение Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__item">
+                ООО "ИЗС" 2022
+            </div>
+            <div class="footer__social social">
+                <a href="#" class="social__item">
+                    <span class="i-telegram"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-whatsap"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-vk"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</div>
+<script src="libs/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/fslightbox.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [55.75450412756219, 37.61779656324545], 
+            zoom: 10, 
+            controls: [],
+          },);
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/logo.svg',
+              iconImageSize: [60, 30],
+          });
+           let mainLocation = [
+             {
+              coords: [55.75450412756219, 37.61779656324545],
+              hintContent: 'Азс',
+              ballonContentText: 'Азс'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+          myMap.behaviors.disable('scrollZoom');
+
+  var ctrlKey = false;
+  var ctrlMessVisible = false;
+  var timer;
+
+  // Отслеживаем скролл мыши на карте, чтобы показывать уведомление
+  myMap.events.add(['wheel', 'mousedown'], function(e) {
+    if (e.get('type') == 'wheel') {
+      if (!ctrlKey) { // Ctrl не нажат, показываем уведомление
+        $('#ymap_ctrl_display').fadeIn(300);
+        ctrlMessVisible = true;
+        clearTimeout(timer); // Очищаем таймер, чтобы продолжать показывать уведомление
+        timer = setTimeout(function() {
+          $('#ymap_ctrl_display').fadeOut(300);
+          ctrlMessVisible = false;
+        }, 1500);
+      }
+      else { // Ctrl нажат, скрываем сообщение
+        $('#ymap_ctrl_display').fadeOut(100);
+      }
+    }
+    if (e.get('type') == 'mousedown' && ctrlMessVisible) { // Скрываем уведомление при клике на карте
+      $('#ymap_ctrl_display').fadeOut(100);
+    }
+  });
+
+    // Обрабатываем нажатие на Ctrl
+    $(document).keydown(function(e) {
+      if (e.which === 17 && !ctrlKey) { // Ctrl нажат: включаем масштабирование мышью
+        ctrlKey = true;
+        myMap.behaviors.enable('scrollZoom');
+      }
+  });
+    $(document).keyup(function(e) { // Ctrl не нажат: выключаем масштабирование мышью
+      if (e.which === 17) {
+        ctrlKey = false;
+        myMap.behaviors.disable('scrollZoom');
+      }
+    });
+      }
+</script> 
+
+</body>
+</html>

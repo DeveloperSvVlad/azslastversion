@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>Продукция внутренняя</title>
+</head>
+<body>
+  <div class="wrapper">
+  <!-- ?Подключение Header -->
+  <header class="header js-head js-scroll">
+    <div class="header__container container">
+        <div class="header__start">
+            <div class="header__logo">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" width="60" height="30" alt="ИЗС">
+                </a>
+            </div>
+            <nav class="header__menu menu">
+                <div class="header__menu-wrapper menu">
+                    <div class="menu__mobile-close js-menu-close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L10.8995 10.8995" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M1 11L10.8995 1.10051" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#production">Продукция</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#services">Серверсное обслуживание</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="company.html#sertificat">Сертификаты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="partners.html">Наши партнёры</a></li>
+                        <li class="menu__item"><a class="menu__link" href="company.html">О компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="all-news.html">Новости</a></li>
+                    </ul>
+                    <div class="menu__mobile-content">
+                        <a class="menu__mobile-link" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                        <a class="menu__mobile-btn btn btn-second" href="#" >Написать в Whatsapp </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__end">
+            <div class="header__any any-content">
+                <div class="any-content__link">
+                    <a class="link-main" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                </div>
+                <div class="any-content__block">
+                    <div class="any-content__item">
+                        <a href="mailto:azs@mail.ru" class="any-content__icon icon-header"><span class="i-message"></span></a>
+                    </div>
+                    <div class="any-content__item">
+                        <button class="search js-search-btn icon-header"><span class="i-search"></span></button>
+                    </div>
+                </div>
+                <button class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="search-block js-search-block">
+        <div class="container">
+            <form class="search-block__form" action="#">
+                <div class="search-block__input">
+                    <input placeholder="Введите название" class="search-block__control"></input>
+                    <button class="search-block__btn"><span class="i-search"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+
+
+<!--? Location popup -->
+<div class="popup popup-main js-popup-main">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"><span class="i-close"></span></button>
+            <div class="popup__title">Обратная связь</div>
+            <div class="popup__desc">
+                Вы можете задать свой вопрос в форме ниже. Наши специалисты свяжутся с вами 
+                и проконсультируют по всем вопросам
+            </div>
+            <form class="form" action="#">
+                <div class="form__wrapper">
+                    <div class="form__item">
+                        <label for="input-name" class="form__label">Имя</label>
+                        <div class="form__input">
+                            <input id="input-name" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="input-questions" class="form__label">Ваш вопрос</label>
+                        <div class="form__input">
+                            <input id="input-questions" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input">
+                            <input required class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                    </div>
+                </div>
+                <button class="form__btn btn btn-primary">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+  <script>
+      const headerSecond = document.querySelector('.header');
+      headerSecond.classList.add('header-second')
+  </script>
+  <!-- ?Основной контент -->
+  <main class="main main--page">
+    <!--? Breadcrumb -->
+    <div class="breadcrumb mb-desc">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb__nav">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb__item active">КАЗС</li>
+               </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ? Product page -->
+    <section class="product-page mb-desc">
+        <div class="container">
+            <div class="product-page__head head head--ind-mobile">
+                <h1 class="title title-primary p-right">КАЗС с доставкой и установкой под ключ</h1>
+                <a href="#" class="product-page__btn btn btn-primary">Расчет стоимости</a>
+            </div>
+                <div class="image-block image-style">
+                    <img src="img/big-image-inner/big-image-inner-3.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <!--? Block -->
+    <section class="block block-ind">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Описание</div>
+                    </div>
+                    <div class="page__content">
+                        <div class="grid-half">
+                            <div class="desc">Контейнерная автозаправочная станция (КАЗС) - АЗС, технологическая система которой необходима для заправки автотранспортных средств только жидким моторным топливом.</div>
+                            <div class="desc">Отличительной чертой такой АЗС также является надземное расположение резервуаров и размещение ТРК в контейнере хранения топлива, выполненном как одно целое заводское изделие.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? BLock -->
+    <section class="block block-ind">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Назначение</div>
+                    </div>
+                    <div class="page__content">
+                        <div class="block__head block__head--ind head">
+                            <h2 class="title title-second">КАЗС является полноценным заправочным комплексом</h2>
+                        </div>
+                        <div class="grid-half">
+                            <div class="desc">КАЗС объединяет функции приема, хранения и отпуска любого вида жидко-моторного топлива (бензины, дизельное топливо, авиационное топливо и прочие технические жидкости) в едином конструктиве.</div>
+                            <div class="desc">Это позволяет: исключить вопросы организации строительства, сократить до минимума земельный участок для организации процесса заправки любых транспортных средств.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--? Features -->
+    <section class="features block-ind">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Характеристики</div>
+                    </div>
+                    <div class="page__content">
+                        <div class="head">
+                            <h2 class="title title-second">Компания ООО "АЗС" производит КАЗС  для любых условий эксплуатации  в антивандальном и без операторном исполнении</h2>
+                        </div>
+                        <div class="features__wrapper mb-desc">
+                            <div class="features__items">
+                                <div class="features__item">
+                                    <div class="item-features">
+                                        <div class="item-features__info">От <span>-70°C</span> до<span>+50°C</span></div>
+                                        <p>Температура эксплуатации</p>
+                                    </div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="item-features">
+                                        <div class="item-features__info"><span>50-1000</span> л/мин</div>
+                                        <p>Расход</p>
+                                    </div>
+                                </div>
+                                <div class="features__item">
+                                    <div class="item-features">
+                                        <div class="item-features__info"><span>1 - 1000</span> м³</div>
+                                        <p>Вместимость</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc">Произведем КАЗС для любых целей – заправка автомобилей, карьерной, сельскохозяйственной, спец. техники, снабжение топливом дизель-генераторных установок (ДГУ) и прочих потребителей.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? Consultation -->
+    <section class="consultation block-ind">
+    <div class="container">
+        <div class="page">
+            <div class="page__row">
+                <div class="page__text">
+                    <div class="text text--ind">Консультация</div>
+                </div>
+                <div class="page__content">
+                    <div class="head">
+                        <h2 class="consultation__title title title-second">Получить консультацию по подбору КАЗС</h2>
+                    </div>
+                    <div class="consultation__row">
+                        <div class="consultation__form">
+                            <form class="form" action="#">
+                                <div class="form__wrapper">
+                                    <div class="form__item">
+                                        <label for="" class="form__label">Имя</label>
+                                        <div class="form__input">
+                                            <input class="form__control form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <label for="" class="form__label">Ваш вопрос</label>
+                                        <div class="form__input">
+                                            <input class="form__control form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__input">
+                                            <input class="form__control form-control" placeholder="+7 (999) 999-99-99" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="form__btn btn btn-primary">Отправить заявку</button>
+                            </form>
+                        </div>
+                        <div class="consultation__image image-style">
+                            <img src="img/consulation-image.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ? Block any -->
+    <section class="block-any block-ind" style="display: none;">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Сервисное обсулуживание</div>
+                    </div>
+                    <div class="page__content">
+                       <div class="head block-any__head">
+                           <h2 class="title title-second">Обеспечим пуско-наладочные работы и ввод в эксплуатацию</h2>
+                       </div>
+                       <div class="blocka-any__desc desc mb-desc">
+                        Все работы выполняются опытными специалистами. После сдачи работ сопровождаем дистанционно, работает круглосуточная техническая поддержка .
+                      </div>
+                       <div class="block-any__content">
+                           <div class="block-any__image image-style">
+                               <img src="img/block-image.png" alt="">
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--? Delivery -->
+    <section class="delivery block-ind" style="display: none;">
+        <div class="container">
+            <div class="page">
+                <div class="page__row">
+                    <div class="page__text">
+                        <div class="text text--ind">Доставка</div>
+                    </div>
+                    <div class="page__content">
+                        <div class="delivery__head head head--ind-mobile">
+                            <h2 class="title title-second p-right">Доставим КАЗС в любую точку на карте</h2>
+                            <a href="#" class="delivery__btn btn btn-primary">Рассчитать доставку</a>
+                        </div>
+                        <div class="delivery__desc desc mb-desc">Мы осуществляем доставку КАЗС по всей России – автомобильным транспортом, ж/д или морской перевозкой.</div>
+                        <div class="delivery__map">
+                            <img src="img/map-point.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- ?Подключение Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__item">
+                ООО "ИЗС" 2022
+            </div>
+            <div class="footer__social social">
+                <a href="#" class="social__item">
+                    <span class="i-telegram"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-whatsap"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-vk"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</div>
+<script src="libs/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/fslightbox.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [55.75450412756219, 37.61779656324545], 
+            zoom: 10, 
+            controls: [],
+          },);
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/logo.svg',
+              iconImageSize: [60, 30],
+          });
+           let mainLocation = [
+             {
+              coords: [55.75450412756219, 37.61779656324545],
+              hintContent: 'Азс',
+              ballonContentText: 'Азс'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+          myMap.behaviors.disable('scrollZoom');
+
+  var ctrlKey = false;
+  var ctrlMessVisible = false;
+  var timer;
+
+  // Отслеживаем скролл мыши на карте, чтобы показывать уведомление
+  myMap.events.add(['wheel', 'mousedown'], function(e) {
+    if (e.get('type') == 'wheel') {
+      if (!ctrlKey) { // Ctrl не нажат, показываем уведомление
+        $('#ymap_ctrl_display').fadeIn(300);
+        ctrlMessVisible = true;
+        clearTimeout(timer); // Очищаем таймер, чтобы продолжать показывать уведомление
+        timer = setTimeout(function() {
+          $('#ymap_ctrl_display').fadeOut(300);
+          ctrlMessVisible = false;
+        }, 1500);
+      }
+      else { // Ctrl нажат, скрываем сообщение
+        $('#ymap_ctrl_display').fadeOut(100);
+      }
+    }
+    if (e.get('type') == 'mousedown' && ctrlMessVisible) { // Скрываем уведомление при клике на карте
+      $('#ymap_ctrl_display').fadeOut(100);
+    }
+  });
+
+    // Обрабатываем нажатие на Ctrl
+    $(document).keydown(function(e) {
+      if (e.which === 17 && !ctrlKey) { // Ctrl нажат: включаем масштабирование мышью
+        ctrlKey = true;
+        myMap.behaviors.enable('scrollZoom');
+      }
+  });
+    $(document).keyup(function(e) { // Ctrl не нажат: выключаем масштабирование мышью
+      if (e.which === 17) {
+        ctrlKey = false;
+        myMap.behaviors.disable('scrollZoom');
+      }
+    });
+      }
+</script> 
+
+</body>
+</html>

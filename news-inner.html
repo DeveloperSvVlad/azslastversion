@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>Внутрення новостей</title>
+</head>
+<body>
+  <div class="wrapper">
+  <!-- ?Подключение Header -->
+  <header class="header js-head js-scroll">
+    <div class="header__container container">
+        <div class="header__start">
+            <div class="header__logo">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" width="60" height="30" alt="ИЗС">
+                </a>
+            </div>
+            <nav class="header__menu menu">
+                <div class="header__menu-wrapper menu">
+                    <div class="menu__mobile-close js-menu-close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L10.8995 10.8995" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M1 11L10.8995 1.10051" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#production">Продукция</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#services">Серверсное обслуживание</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="company.html#sertificat">Сертификаты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="partners.html">Наши партнёры</a></li>
+                        <li class="menu__item"><a class="menu__link" href="company.html">О компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="all-news.html">Новости</a></li>
+                    </ul>
+                    <div class="menu__mobile-content">
+                        <a class="menu__mobile-link" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                        <a class="menu__mobile-btn btn btn-second" href="#" >Написать в Whatsapp </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__end">
+            <div class="header__any any-content">
+                <div class="any-content__link">
+                    <a class="link-main" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                </div>
+                <div class="any-content__block">
+                    <div class="any-content__item">
+                        <a href="mailto:azs@mail.ru" class="any-content__icon icon-header"><span class="i-message"></span></a>
+                    </div>
+                    <div class="any-content__item">
+                        <button class="search js-search-btn icon-header"><span class="i-search"></span></button>
+                    </div>
+                </div>
+                <button class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="search-block js-search-block">
+        <div class="container">
+            <form class="search-block__form" action="#">
+                <div class="search-block__input">
+                    <input placeholder="Введите название" class="search-block__control"></input>
+                    <button class="search-block__btn"><span class="i-search"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+
+
+<!--? Location popup -->
+<div class="popup popup-main js-popup-main">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"><span class="i-close"></span></button>
+            <div class="popup__title">Обратная связь</div>
+            <div class="popup__desc">
+                Вы можете задать свой вопрос в форме ниже. Наши специалисты свяжутся с вами 
+                и проконсультируют по всем вопросам
+            </div>
+            <form class="form" action="#">
+                <div class="form__wrapper">
+                    <div class="form__item">
+                        <label for="input-name" class="form__label">Имя</label>
+                        <div class="form__input">
+                            <input id="input-name" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="input-questions" class="form__label">Ваш вопрос</label>
+                        <div class="form__input">
+                            <input id="input-questions" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input">
+                            <input required class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                    </div>
+                </div>
+                <button class="form__btn btn btn-primary">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+  <script>
+      const headerSecond = document.querySelector('.header');
+      headerSecond.classList.add('header-second')
+  </script>
+  <!-- ?Основной контент -->
+  <main class="main main--page">
+    <!--? Breadcrumb -->
+    <div class="breadcrumb mb-desc">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb__nav">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb__item"><a href="all-news.html">Статьи</a></li>
+                    <li class="breadcrumb__item active">Преимущества КАЗС</li>
+               </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ? News inner -->
+    <section class="news-inner block-ind">
+        <div class="container">
+            <div class="news-inner__head head head--ind-mobile">
+                <h1 class="news-inner__title title title-primary p-right">Преимущества использования контейнерных АЗС для заправки техники</h1>
+                <div class="news-inner__social social-any">
+                    <div class="social-any__item">
+                        <button type="button"  class="social-any__link js-copy-url"><span class="i-zakrep"></span></button>
+                    </div>
+                    <div class="social-any__item">
+                        <div class="social-any__main">
+                            <div class="social-any__link"><span class="i-share"></span></div>
+                            <div class="social-any__items">
+                                <a href="#"><img src="img/social/vk-fill.svg" alt=""></a>
+                                <a href="#"><img src="img/social/whatsap-fill.svg" alt=""></a>
+                                <a href="#"><img src="img/social/telegramm-fill.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-block image-style mb-desc">
+                <img src="img/big-image-inner/big-image-inner.png" alt="">
+            </div>
+
+            <div class="content">
+                <div class="content__row">
+                    <div class="content__text p-right">
+                        <div class="date">
+                            07.04.2022
+                        </div>
+                    </div>
+                    <div class="content__block content__block--width block-content">
+                        <div class="block-content__wrapper">
+                            <div class="block-content__item">
+                                <h3 class="block-content__title title title-content">В последнее время все большее распространение получает контейнерная АЗС</h3>
+                                <p>Многие предприятия, имеющие большое количество собственного автотранспорта создают на своей территории собственные ведомственные АЗС.</p>
+                                <p>Стационарные АЗС — это сооружения с подземными резервуарами, которые размещаются, проектируются, строятся и эксплуатируются в соответствии со строительными нормами и правилами, инструкциями по пожарной безопасности. К стационарным можно отнести блочные АЗС, где топливные колонки расположены над резервуаром, такая конструкция в виде блока изготавливается целиком на заводе, и модульные, где контейнеры для хранения топлива разнесены с колонками.</p>
+                            </div>
+                            <div class="block-content__item">
+                                <h3 class="block-content__title title title-content title--decor">Основное отличие</h3>
+                                <p> Основное отличие контейнерной автозаправочной станции от стационарных АЗС это то, что топливораздаточная колонка и технологическое оборудование помещены внутри контейнера. Это позволяет защитить резервуар и технологическое оборудование от механических повреждений.</p>
+                                <p>Для установки контейнерной АЗС не требуется выполнение земляных работ, устройство сложных фундаментов, колодцев слива топлива, выполнение монтажа резервуаров для сбора аварийных проливов топлива. Все контейнерные АЗС изготавливается в соответствии с требованиями НПБ. Контейнер хранения топлива изготавливается в виде металлической конструкции, поделенной на отсеки противопожарными перегородками. В заправочном отсеке располагаются топливораздаточные колонки, в отдельных отсеках располагаются резервуар хранения топлива, взрывобезопасный перекачивающий насос. Технологическое оборудование устанавливаться сверху резервуара, по верху контейнера располагается огражденная площадка для обслуживания этого оборудования. </p>
+                                <p>Существуют варианты конструкций, в которых оборудование располагается сбоку, в специальном отсеке. Контейнерная АЗС может состоять из двух или более контейнеров: контейнера(ов) хранения топлива и контейнера управления, который еще называется операторской. Контейнер управления может включать не только рабочее место оператора, но и помещение для отдыха и т.д. Операторская оборудуется освещением и электропроводкой, там же помещаются устройства управления.
+                                    В комплект оборудования может входить силовой шкаф, метрологическое оборудование, системы связи.</p>
+                            </div>
+                            <div class="block-content__item">
+                                <h3 class="block-content__title title title-content title--decor">КАЗС может проводить заправку от 1 до 4 видов топлива</h3>
+                                <p>  соответственно комплектуется резервуарами различной вместимости и типов: одно-, двух-, трех- или четырехсекционными. Емкость резервуаров может быть от трех до сорока кубических метров. Топливораздаточные колонки, используемые для отпуска топлива тоже могут различаться по количеству раздаточных кранов и отпускаемому виду топлива.</p>
+                                <p>С контейнерной АЗС могут поставляться как однорукавные топливораздаточные колонки, например «Эколайн», так и двухрукавные, трехрукавные, и даже четырехрукавные типа «Евролайн» или «Экстралайн». Существуют решения, использование которых позволяет эксплуатировать контейнерную АЗС в климатических условиях Заполярья и Крайнего Севера.</p>
+                                <p>В контейнерной АЗС используются двустенные резервуары, в которых межстенное пространство по требованиям пожарной безопасности должно быть заполнено тосолом или инертным газом, и обязательно устанавливается датчик контроля утечки. Оборудование контейнерной АЗС включает в себя трубы, замерные патрубки, люки, датчики верхнего уровня, отсечные клапаны, дыхательные клапаны. Резервуар и трубы изготавливаются из высококачественных, морозостойких, нержавеющих сталей толщиной от 2 мм. В том случае, если контейнерная АЗС расположена за пределами населенного пункта возможен вариант использования одностенного резервуара с поддоном для сбора пролитого топлива.</p>
+                            </div>
+                        </div>
+                        <div class="block-content__image">
+                            <img src="img/big-image-inner/big-image-inner-2.png" alt="">
+                        </div>
+                        <div class="block-content__wrapper">
+                            <div class="block-content__item">
+                                <h3 class="block-content__title title title-content title--decor">Доп.оборудование</h3>
+                                <div class="block-content__list list">
+                                    <div class="list__title">В качестве доп.оборудования в контейнерных АЗС могут устанавливаться системы разного назначения, такие как:</div>
+                                    <ul class="list__content">
+                                        <li>системы автономного налива топлива;</li>
+                                        <li>Подключение безоператорных АЗС</li>
+                                        <li>считыватель смарт-карт;</li>
+                                        <li>клавиатура.</li>
+                                    </ul>
+                                </div>
+                                <p>Рассмотрим работу контейнерной АЗС в режиме безоператорного автономного налива. Количество топлива доступное для заправки каждого автомобиля устанавливается в головном офисе через программный комплекс «IS.Офис АЗС». Он же обрабатывает информацию, поступающую с контейнерных АЗС по каналам GSM-связи. Топливо может отпускаться автономно через терминалы, идентификация водителей происходит при помощи лимитных пластиковых карт, на которые бухгалтерия предприятия распределяет лимиты топлива. Кассовый аппарат, компьютер, специальное программное обеспечение, современные средства связи с центральным офисом могут устанавливаться на АЗС по желанию заказчика. Также возможна комплектация отдельным пунктом управления (операторской). Возможно исполнение контейнерных АЗС для разных климатических условий, в том числе изготовление резервуара из специальных морозостойких сталей. Возможно оборудование трубопроводов системой подогрева топлива.</p>
+                                <p>Контейнерные АЗС по желанию заказчика могут быть оборудованы системами пожаротушения и системами контроля уровня топлива. В штатной комплектации контейнерная АЗС оснащается уровнемером компании «Сенсор». Данный уровнемер позволяет измерять такие характеристики, как уровень, температуру, плотность и объем. Автоматическая система отслеживает наполнение резервуара, состояние топлива, его отпуск.</p>
+                            </div>
+                            <div class="block-content__item">
+                                <h3 class="block-content__title title title-content title--decor">Стоимость</h3>
+                                <div class="block-content__list list">
+                                    <div class="list__title"> Цена, бесспорно, является важным аргументом в выборе АЗС. Но выбирать ее нужно все-таки по качеству комплектующих и материалов. Эти факторы намного важнее для безопасной и длительной эксплуатации контейнерной АЗС.
+                                        Несомненными преимуществами использования контейнерных АЗС являются следующие параметры:</div>
+                                    <ul class="list__content">
+                                        <li>контейнерные АЗС имеют высокую степень заводской готовности, что значительно снижает затраты на монтаж и настройку;</li>
+                                        <li>температура эксплуатации контейнерных АЗС значительно выше обычных стационарных АЗС за счет подогрева;</li>
+                                        <li>имеется возможность установки терминала безоператорной выдачи топлива. Что во много раз снижает расходы на обслуживание;</li>
+                                        <li>мобильность и удобная транспортировка авто и ж/д транспортом к месту эксплуатации. Удобно при проведении сезонных работ, на стройплощадках, при проведении карьерных работ;</li>
+                                        <li>контейнерные АЗС имеют габариты пригодные для транспортировки обычным транспортом;</li>
+                                        <li>широкий выбор систем управления — от пульта ДУ и управления оператором, до систем автоматизации с возможностью управления через интернет;</li>
+                                        <li>возможность создания собственной сети контейнерных АЗС;</li>
+                                        <li>возможность эксплуатации контейнерных АЗС в сейсмоопасных районах;</li>
+                                        <li>возможность размещения на территории и вне территории населённых пунктов;</li>
+                                        <li>большой срок службы;</li>
+                                        <li>гарантия 18 месяцев;</li>
+                                        <li>закуп топлива по низким оптовым ценам;</li>
+                                        <li>создание на предприятии запаса топлива;</li>
+                                        <li>контроль за расходом топлива из офиса в режиме онлайн;</li>
+                                        <li>исключение человеческого фактора при использовании систем автоматизации;</li>
+                                        <li>исключение нецелевого использования топлива;</li>
+                                        <li>антивандальная защита от порчи оборудования;</li>
+                                        <li>эксплуатация без аварийных проливов;</li>
+                                        <li>высокая степень взрывозащищенности оборудования;</li>
+                                        <li>нет необходимости оформлять разрешения на использование контейнерной АЗС;</li>
+                                        <li>возможность изготовления контейнерной АЗС с учетом индивидуальных требований клиента.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-content__date date">07.04.2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--? Slider article -->
+    <section class="article-block block-ind">
+        <div class="container">
+            <div class="article-block__head mb-desc">
+                <h2 class="article__title title title-content p-right">Другие статьи</h2>
+                <div class="article-block__controls">
+                    <div class="controls">
+                        <div class="swiper-button-prev arrow-slider js-prev-article">
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.51038 1L0.999998 9.51038M9.51038 18.0208L0.999998 9.51038M0.999998 9.51038H18.0208"/>
+                            </svg>    
+                        </div>
+                        <div class="swiper-button-next arrow-slider js-next-article">
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.51025 18.021L17.0206 9.51062M8.51025 1.00024L17.0206 9.51062M17.0206 9.51062L-0.000124718 9.51062"/>
+                            </svg>    
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="article-block__slider">
+                <div class="swiper-container js-article-slider">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="item-news">
+                            <a href="news-inner.html" class="item-news__body">
+                              <div class="item-news__image">
+                                  <img src="img/news/news-image-1.png" alt="">
+                              </div>
+                              <div class="item-news__content">
+                                  <div class="item-news__date date">15.03.2022</div>
+                                  <h4 class="item-news__title">Чем отличаются контейнерные АЗС от топливозаправочных пунктов</h4>
+                                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                              </div>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="item-news">
+                            <a href="news-inner.html" class="item-news__body">
+                              <div class="item-news__image">
+                                  <img src="img/news/news-image-2.png" alt="">
+                              </div>
+                              <div class="item-news__content">
+                                  <div class="item-news__date date">25.03.2022</div>
+                                  <h4 class="item-news__title">Особые требования к размещению АЗС</h4>
+                                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты.</p>
+                              </div>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="item-news">
+                            <a href="news-inner.html" class="item-news__body">
+                              <div class="item-news__image">
+                                  <img src="img/news/news-image-3.png" alt="">
+                              </div>
+                              <div class="item-news__content">
+                                  <div class="item-news__date date">01.04.2022</div>
+                                  <h4 class="item-news__title">Особенности транспортировки КАЗС</h4>
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- ?Подключение Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__item">
+                ООО "ИЗС" 2022
+            </div>
+            <div class="footer__social social">
+                <a href="#" class="social__item">
+                    <span class="i-telegram"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-whatsap"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-vk"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</div>
+<script src="libs/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/fslightbox.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [55.75450412756219, 37.61779656324545], 
+            zoom: 10, 
+            controls: [],
+          },);
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/logo.svg',
+              iconImageSize: [60, 30],
+          });
+           let mainLocation = [
+             {
+              coords: [55.75450412756219, 37.61779656324545],
+              hintContent: 'Азс',
+              ballonContentText: 'Азс'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+          myMap.behaviors.disable('scrollZoom');
+
+  var ctrlKey = false;
+  var ctrlMessVisible = false;
+  var timer;
+
+  // Отслеживаем скролл мыши на карте, чтобы показывать уведомление
+  myMap.events.add(['wheel', 'mousedown'], function(e) {
+    if (e.get('type') == 'wheel') {
+      if (!ctrlKey) { // Ctrl не нажат, показываем уведомление
+        $('#ymap_ctrl_display').fadeIn(300);
+        ctrlMessVisible = true;
+        clearTimeout(timer); // Очищаем таймер, чтобы продолжать показывать уведомление
+        timer = setTimeout(function() {
+          $('#ymap_ctrl_display').fadeOut(300);
+          ctrlMessVisible = false;
+        }, 1500);
+      }
+      else { // Ctrl нажат, скрываем сообщение
+        $('#ymap_ctrl_display').fadeOut(100);
+      }
+    }
+    if (e.get('type') == 'mousedown' && ctrlMessVisible) { // Скрываем уведомление при клике на карте
+      $('#ymap_ctrl_display').fadeOut(100);
+    }
+  });
+
+    // Обрабатываем нажатие на Ctrl
+    $(document).keydown(function(e) {
+      if (e.which === 17 && !ctrlKey) { // Ctrl нажат: включаем масштабирование мышью
+        ctrlKey = true;
+        myMap.behaviors.enable('scrollZoom');
+      }
+  });
+    $(document).keyup(function(e) { // Ctrl не нажат: выключаем масштабирование мышью
+      if (e.which === 17) {
+        ctrlKey = false;
+        myMap.behaviors.disable('scrollZoom');
+      }
+    });
+      }
+</script> 
+
+</body>
+</html>

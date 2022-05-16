@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>Главная</title>
+</head>
+<body>
+  <div class="wrapper">
+  <!-- ?Подключение Header -->
+  <header class="header js-head js-scroll">
+    <div class="header__container container">
+        <div class="header__start">
+            <div class="header__logo">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" width="60" height="30" alt="ИЗС">
+                </a>
+            </div>
+            <nav class="header__menu menu">
+                <div class="header__menu-wrapper menu">
+                    <div class="menu__mobile-close js-menu-close">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L10.8995 10.8995" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M1 11L10.8995 1.10051" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#production">Продукция</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="index.html#services">Серверсное обслуживание</a></li>
+                        <li class="menu__item"><a class="menu__link js-scroll-link" href="company.html#sertificat">Сертификаты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="partners.html">Наши партнёры</a></li>
+                        <li class="menu__item"><a class="menu__link" href="company.html">О компании</a></li>
+                        <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                        <li class="menu__item"><a class="menu__link" href="all-news.html">Новости</a></li>
+                    </ul>
+                    <div class="menu__mobile-content">
+                        <a class="menu__mobile-link" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                        <a class="menu__mobile-btn btn btn-second" href="#" >Написать в Whatsapp </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__end">
+            <div class="header__any any-content">
+                <div class="any-content__link">
+                    <a class="link-main" href="tel:+79080610174">+7 (908) 061-01-74</a>
+                </div>
+                <div class="any-content__block">
+                    <div class="any-content__item">
+                        <a href="mailto:azs@mail.ru" class="any-content__icon icon-header"><span class="i-message"></span></a>
+                    </div>
+                    <div class="any-content__item">
+                        <button class="search js-search-btn icon-header"><span class="i-search"></span></button>
+                    </div>
+                </div>
+                <button class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="search-block js-search-block">
+        <div class="container">
+            <form class="search-block__form" action="#">
+                <div class="search-block__input">
+                    <input placeholder="Введите название" class="search-block__control"></input>
+                    <button class="search-block__btn"><span class="i-search"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+
+
+<!--? Location popup -->
+<div class="popup popup-main js-popup-main">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"><span class="i-close"></span></button>
+            <div class="popup__title">Обратная связь</div>
+            <div class="popup__desc">
+                Вы можете задать свой вопрос в форме ниже. Наши специалисты свяжутся с вами 
+                и проконсультируют по всем вопросам
+            </div>
+            <form class="form" action="#">
+                <div class="form__wrapper">
+                    <div class="form__item">
+                        <label for="input-name" class="form__label">Имя</label>
+                        <div class="form__input">
+                            <input id="input-name" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="input-questions" class="form__label">Ваш вопрос</label>
+                        <div class="form__input">
+                            <input id="input-questions" required class="form__control form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input">
+                            <input required class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                    </div>
+                </div>
+                <button class="form__btn btn btn-primary">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- ?Основной контент -->
+  <main class="main">
+   <!--? Hero -->
+   <section class="hero">
+        <div class="swiper-container js-slider-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-cover" style="background-image: url(img/global-image/global-image-1.png);">
+                <div class="hero__container container">
+                    <div class="hero__content" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="1">
+                        <div class="hero__title">Научно-Производственная Компания</div>
+                        <p>Оборудование для АЗС,АГНКС,АГЗС, нефтебаз и газохранилищ</p>
+                        <a href="#" class="hero__btn btn btn-second">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide bg-cover" style="background-image: url(img/global-image/global-image-2.png);">
+              <div class="hero__container container">
+                  <div class="hero__content" data-swiper-parallax-scale="0.5" data-swiper-parallax-opacity="1">
+                      <div class="hero__title">Производство оборудования для АГНКС</div>
+                      <p>Компрессоры CNG, системы осушки газа, панели приоритетов,  ГРК, ПАГЗ</p>
+                      <a href="#" class="hero__btn btn btn-second">Подробнее</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+            <div class="hero__bottom container">
+              <div class="hero__controls controls">
+                  <div class="swiper-button-prev js-prev-hero">
+                    <svg fill="#ffffff" version="1.1" viewBox="0 0 15.699 8.707" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="15.699,3.854 1.914,3.854 5.061,0.707 4.354,0 0,4.354 4.354,8.707 5.061,8 1.914,4.854 15.699,4.854 "/>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next js-next-hero">
+                    <svg fill="#ffffff"  version="1.1" viewBox="0 0 15.698 8.706" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "/>
+                    </svg>
+                  </div>
+              </div>
+            </div>
+        </div>
+   </section>
+
+   <!--? Product Section -->
+   <section id="production" class="product block-ind">
+      <div class="container">
+          <div class="head">
+              <h2 class="title title-primary">Продукция</h2>
+          </div>
+          <div class="product__wrapper">
+            <div class="product__items">
+              <div class="product__item">
+                <div class="item-product">
+                  <div class="item-product__body">
+                    <h4 class="item-product__title">КАЗС</h4>
+                    <a href="product-inner.html" class="item-product__image">
+                        <img src="img/product/product-image-1.png" alt="">
+                    </a>
+                    <ul class="item-product__list">
+                      <li><a href="product-inner.html">Ведомственные</a></li>
+                      <li><a href="product-inner.html">Коммерческие</a></li>
+                      <li><a href="product-inner.html">Безоператорные</a></li>
+                    </ul>
+                  </div>
+               </div>
+              </div>
+              <div class="product__item ">
+                <div class="item-product">
+                  <div class="item-product__body">
+                    <h4 class="item-product__title">Резервуары</h4>
+                    <a href="product-inner.html" class="item-product__image">
+                        <img src="img/product/product-image-2.png" alt="">
+                    </a>
+                    <ul class="item-product__list">
+                      <li><a href="product-inner.html">Надземные</a></li>
+                      <li><a href="product-inner.html">Подземные</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="item-product">
+                  <div class="item-product__body">
+                    <h4 class="item-product__title">АГЗС</h4>
+                    <a href="product-inner.html" class="item-product__image">
+                        <img src="img/product/product-image-3.png" alt="">
+                    </a>
+                    <ul class="item-product__list">
+                      <li><a href="product-inner.html">10 кубических метров</a></li>
+                      <li><a href="product-inner.html">20 кубических метров</a></li>
+                      <li><a href="product-inner.html">30 кубических метров</a></li>
+                      <li><a href="product-inner.html">40 кубических метров</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="item-product">
+                  <div class="item-product__body">
+                    <h4 class="item-product__title">АГНКС</h4>
+                    <a href="product-inner.html" class="item-product__image">
+                        <img src="img/product/product-image-4.png" alt="">
+                    </a>
+                    <ul class="item-product__list">
+                      <li><a href="product-inner.html">Модульные АГНКС</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+   </section>
+
+   <!--? Any Section -->
+   <section class="any-block block-ind gradient bg-image" style="background-image: url(img/any-image/any-image-bg.png);">
+      <div class="any-block__container container">
+        <div class="any-block__content">
+          <h2 class="any-block__title title title-primary">АЗС под ключ</h2>
+          <p>Инновации – рядом</p>
+          <div class="any-block__buttons">
+            <button data-popup="js-popup-main" class="any-block__btn btn btn-primary">Оставить заявку</button>
+            <a href="#" class="any-block__btn btn btn-second">Подробнее</a>
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <!--? Service Section -->
+   <section id="services" class="service block-ind">
+      <div class="container">
+          <div class="head">
+            <h2 class="title title-primary">Сервисное обслуживание</h2>
+          </div>
+          <div class="service__wrapper">
+            <div class="service__items">
+              <div class="service__item">
+                  <div class="item-any">
+                      <a href="#" class="item-any__body">
+                          <div class="item-any__icon i-station"></div>
+                          <h3 class="item-any__title">Монтаж резервуаров</h3>
+                          <div class="item-any__desc">
+                              Полный пакет обслуживания топливно-раздаточной колонки, гарантия полной работоспособности
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="service__item">
+                <div class="item-any">
+                    <a href="#" class="item-any__body">
+                        <div class="item-any__icon i-shest"></div>
+                        <h3 class="item-any__title">Демонтаж резервуаров</h3>
+                        <div class="item-any__desc">
+                            Демонтаж всех систем, быстро и качественно 
+                        </div>
+                    </a>
+                </div>
+              </div>
+              <div class="service__item">
+              <div class="item-any">
+                  <a href="#" class="item-any__body">
+                      <div class="item-any__icon i-hand"></div>
+                      <h3 class="item-any__title">Обслуживание ТРК</h3>
+                      <div class="item-any__desc">
+                        Полный пакет обслуживания топливно-раздаточной колонки, гарантия полной работоспособности
+                      </div>
+                  </a>
+              </div>
+              </div>
+              <div class="service__item">
+            <div class="item-any">
+                <a href="#" class="item-any__body">
+                    <div class="item-any__icon i-instrument"></div>
+                    <h3 class="item-any__title">Пуско-наладочные работы </h3>
+                    <div class="item-any__desc">
+                       Проведем весь список необходимых мероприятий необходимых для начала функцианнирования оборудования
+                    </div>
+                </a>
+            </div>
+              </div>
+            </div>
+          </div>
+      </div>
+   </section>
+
+   <!--? About Section -->
+  <section class="about block-ind">
+    <div class="container">
+        <div class="about__head head head--ind-mobile">
+            <h2 class="about__title p-right title title-primary">ООО "АЗС" производит <span>высококачественное оборудование</span> для использования на заправочных станциях с долгосрочной перспективной эксплуатации</h2>
+            <a href="company.html" class="about__btn btn btn-primary">Подробнее</a>
+        </div>
+        <div class="about__wrapper">
+            <div class="about__row">
+                <div class="about__desc">
+                  Основные направления нашей стратегии: совершенствование всех аспектов влияющих на сборку и установку компонентов и систем устройства АЗС
+                </div>
+                <div class="about__desc">
+                  постоянное развитие наших кадров направленное на повышение их профессиональной квалификации и непосредственно на качество оказываемых нами услуг.
+                </div>
+            </div>
+            <div class="about__image image-block">
+              <img src="img/about/about-image.jpg" alt="">
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!--? News Section  -->
+  <section class="news block-ind ind-inner">
+    <div class="container">
+        <div class="news__head head head--ind-mobile">
+            <h2 class="title title-primary p-right">Новости</h2>
+            <a href="all-news.html" class="btn btn-primary">Перейти в пресс-центр</a>
+        </div>
+        <div class="news__block">
+          <div class="swiper-container js-news-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="item-news">
+                      <a href="news-inner.html" class="item-news__body">
+                        <div class="item-news__image">
+                            <img src="img/news/news-image-1.png" alt="">
+                        </div>
+                        <div class="item-news__content">
+                            <div class="item-news__date date">15.03.2022</div>
+                            <h4 class="item-news__title">Чем отличаются контейнерные АЗС от топливозаправочных пунктов</h4>
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-news">
+                    <a href="news-inner.html" class="item-news__body">
+                      <div class="item-news__image">
+                          <img src="img/news/news-image-2.png" alt="">
+                      </div>
+                      <div class="item-news__content">
+                          <div class="item-news__date date">25.03.2022</div>
+                          <h4 class="item-news__title">Особые требования к размещению АЗС</h4>
+                          <p>Далеко-далеко за словесными горами в стране.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-news">
+                    <a href="news-inner.html" class="item-news__body">
+                      <div class="item-news__image">
+                          <img src="img/news/news-image-3.png" alt="">
+                      </div>
+                      <div class="item-news__content">
+                          <div class="item-news__date date">01.04.2022</div>
+                          <h4 class="item-news__title">Особенности транспортировки КАЗС</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-news">
+                    <a href="news-inner.html" class="item-news__body">
+                      <div class="item-news__image">
+                          <img src="img/news/news-image-4.png" alt="">
+                      </div>
+                      <div class="item-news__content">
+                          <div class="item-news__date date">15.03.2022</div>
+                          <h4 class="item-news__title">Чем отличаются контейнерные АЗС от топливозаправочных пунктов</h4>
+                          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-news">
+                    <a href="news-inner.html" class="item-news__body">
+                      <div class="item-news__image">
+                          <img src="img/news/news-image-5.png" alt="">
+                      </div>
+                      <div class="item-news__content">
+                          <div class="item-news__date date">15.03.2022</div>
+                          <h4 class="item-news__title">Особые требования к размещению АЗС</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-news">
+                    <a href="news-inner.html" class="item-news__body">
+                      <div class="item-news__image">
+                          <img src="img/news/news-image-6.png" alt="">
+                      </div>
+                      <div class="item-news__content">
+                          <div class="item-news__date date">15.03.2022</div>
+                          <h4 class="item-news__title">Особенности транспортировки КАЗС</h4>
+                          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="all-news.html" class="all-see">Смотреть все</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!--? Partners Section-->
+  <section id="partners" class="partners block-ind">
+    <div class="container">
+        <div class="partners__head head head--ind-mobile">
+            <h2 class="p-right title title-primary">Наши партнёры</h2>
+            <div class="partners__controls">
+              <div class="progress">
+                <div class="progress__icon">
+                  <img src="img/scroll-icon.svg" alt="">
+                </div>
+                <div class="progress__text">Используйте прокрутку</div>
+              </div>
+              <div class="controls">
+                <div class="swiper-button-prev arrow-slider js-prev-partners">
+                  <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0101 0.999804L0.99978 16.0101M16.0101 31.0204L0.99978 16.0101M0.99978 16.0101L39 16.0099"/>
+                  </svg>
+                </div>
+                <div class="swiper-button-next arrow-slider js-next-partners">
+                  <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.9899 31.0201L38.0002 16.0098M22.9899 0.999504L38.0002 16.0098M38.0002 16.0098L-3.65648e-07 16.01"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="partners__slider">
+          <div class="swiper-container js-patners-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-partners">
+                  <div class="item-partners__image">
+                    <img src="img/partners/partners-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-partners">
+                  <div class="item-partners__image">
+                    <img src="img/partners/partners-2.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-partners">
+                  <div class="item-partners__image">
+                    <img src="img/partners/partners-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-partners">
+                  <div class="item-partners__image">
+                    <img src="img/partners/partners-4.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!--? Gallery Section -->
+  <section class="gallery block-ind">
+    <div class="container">
+      <div class="head">
+        <h2 class="title title-primary">Галерея проектов</h2>
+      </div>
+    </div>
+    <div class="gallery__container">
+        <div class="gallery__slider">
+          <div class="swiper-container js-slider-gallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="gallery__image">
+                    <img src="img/global-image/global-image-1.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="gallery__image">
+                    <img src="img/global-image/global-image-2.png" alt="">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="gallery__image">
+                    <img src="img/any-image/any-image-bg.png" alt="">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__controls">
+            <div class="controls">
+              <div class="swiper-button-prev arrow-slider js-prev-gallery">
+                <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.0101 0.999804L0.99978 16.0101M16.0101 31.0204L0.99978 16.0101M0.99978 16.0101L39 16.0099"/>
+                </svg>
+              </div>
+              <div class="swiper-button-next arrow-slider js-next-gallery">
+                <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.9899 31.0201L38.0002 16.0098M22.9899 0.999504L38.0002 16.0098M38.0002 16.0098L-3.65648e-07 16.01"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!--? Contacts -->
+  <section class="contacts contacts--ind">
+    <div class="container">
+        <div class="head">
+          <h3 class="contacts__title title title-primary">Контакты</h3>
+        </div>
+        <div class="contacts__wrapper">
+            <div class="contacts__row">
+                <div class="contacts__info">
+                    <div class="item-contacts">
+                      <div class="item-contacts__label">Офис в Москве</div>
+                      <div class="item-contacts__any">142111, г. Москва, поселок Знамя Октября, поселение Рязановское, Рязановское шоссе вл.21</div>
+                    </div>
+                    <div class="item-contacts">
+                      <div class="item-contacts__label">Производство</div>
+                      <div class="item-contacts__any"> Челябинская обл., г. Копейск,   ул. Поселок советов 20А</div>
+                    </div>
+                    <div class="item-contacts">
+                      <div class="item-contacts__label">Горячая линия</div>
+                      <a href="tel:+79080610174" class="item-contacts__any">+7 (908) 061-01-74</a>
+                    </div>
+                    <div class="item-contacts">
+                      <div class="item-contacts__label">Обратная связь</div>
+                      <div class="item-contacts__buttons">
+                        <a href="mailto:igs74.ru@yandex.r" class="item-contacts__btn btn btn-primary">Написать на почту</a>
+                        <button class="item-contacts__btn btn btn-primary">Написать в Whatsapp </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="contacts__maps">
+                    <div id="map" class="map">
+                      <div class="map__scroll" id="ymap_ctrl_display" style="display: none;">
+                        <div class="map__text">
+                          Чтобы изменить масштаб, прокручивайте карту, удерживая клавишу Ctrl.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ?Подключение Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__item">
+                ООО "ИЗС" 2022
+            </div>
+            <div class="footer__social social">
+                <a href="#" class="social__item">
+                    <span class="i-telegram"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-whatsap"></span>
+                </a>
+                <a href="#" class="social__item">
+                    <span class="i-vk"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</div>
+<script src="libs/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/fslightbox.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+
+<script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [55.75450412756219, 37.61779656324545], 
+            zoom: 10, 
+            controls: [],
+          },);
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/logo.svg',
+              iconImageSize: [60, 30],
+          });
+           let mainLocation = [
+             {
+              coords: [55.75450412756219, 37.61779656324545],
+              hintContent: 'Азс',
+              ballonContentText: 'Азс'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+          myMap.behaviors.disable('scrollZoom');
+
+  var ctrlKey = false;
+  var ctrlMessVisible = false;
+  var timer;
+
+  // Отслеживаем скролл мыши на карте, чтобы показывать уведомление
+  myMap.events.add(['wheel', 'mousedown'], function(e) {
+    if (e.get('type') == 'wheel') {
+      if (!ctrlKey) { // Ctrl не нажат, показываем уведомление
+        $('#ymap_ctrl_display').fadeIn(300);
+        ctrlMessVisible = true;
+        clearTimeout(timer); // Очищаем таймер, чтобы продолжать показывать уведомление
+        timer = setTimeout(function() {
+          $('#ymap_ctrl_display').fadeOut(300);
+          ctrlMessVisible = false;
+        }, 1500);
+      }
+      else { // Ctrl нажат, скрываем сообщение
+        $('#ymap_ctrl_display').fadeOut(100);
+      }
+    }
+    if (e.get('type') == 'mousedown' && ctrlMessVisible) { // Скрываем уведомление при клике на карте
+      $('#ymap_ctrl_display').fadeOut(100);
+    }
+  });
+
+    // Обрабатываем нажатие на Ctrl
+    $(document).keydown(function(e) {
+      if (e.which === 17 && !ctrlKey) { // Ctrl нажат: включаем масштабирование мышью
+        ctrlKey = true;
+        myMap.behaviors.enable('scrollZoom');
+      }
+  });
+    $(document).keyup(function(e) { // Ctrl не нажат: выключаем масштабирование мышью
+      if (e.which === 17) {
+        ctrlKey = false;
+        myMap.behaviors.disable('scrollZoom');
+      }
+    });
+      }
+</script> 
+
+</body>
+</html>
